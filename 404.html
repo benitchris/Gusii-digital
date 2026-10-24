@@ -4,34 +4,56 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Page not found — Gusii Digital</title>
+  <meta name="description" content="That page isn’t here. Head back to Gusii Digital’s homepage.">
   <meta name="robots" content="noindex">
-  <meta name="theme-color" content="#f3efe6">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2314130f'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' font-style='italic' fill='%23f3efe6' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="assets/styles.css">
+  <meta name="theme-color" content="#163b2c">
+  <link rel="icon" href="/Gusii-digital/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/Gusii-digital/assets/styles.css">
+  <script src="/Gusii-digital/assets/main.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <div class="page">
-    <header class="topbar">
-      <a class="wordmark" href="./" aria-label="Gusii Digital — home">Gusii <em>Digital</em></a>
-      <p class="status"><span class="dot" aria-hidden="true"></span>Launching soon</p>
-    </header>
+  <header class="site-header simple-header">
+    <div class="shell header-inner">
+      <a class="brand" href="/Gusii-digital/" aria-label="Gusii Digital — home">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <rect width="40" height="40" rx="9" fill="#163b2c"/>
+          <circle cx="27.5" cy="13" r="3.4" fill="#d3a24a"/>
+          <path d="M6 26c4-6 8.5-9 14-9s10 3 14 9" fill="none" stroke="#f7f2e7" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M10 32c3-3.5 6-5 10-5s7 1.5 10 5" fill="none" stroke="#f7f2e7" stroke-width="1.8" stroke-linecap="round" opacity=".55"/>
+        </svg>
+        <span class="brand-name">Gusii <em>Digital</em></span>
+      </a>
+      <a class="btn btn-outline btn-small" href="/Gusii-digital/">Back home</a>
+    </div>
+  </header>
 
-    <main id="main" class="not-found">
-      <p class="code" aria-hidden="true">404</p>
-      <h1>This page isn’t here.</h1>
-      <p class="back"><a href="./">Back to the home page</a></p>
-    </main>
+  <main id="main" class="error-page">
+    <div class="shell">
+      <p class="error-code" aria-hidden="true">404</p>
+      <h1>This page has wandered off.</h1>
+      <p>The link may be old or mistyped. Head back to the homepage — or send us a message and we’ll point you the right way.</p>
+      <div class="error-actions">
+        <a class="btn btn-solid" href="/Gusii-digital/">Back to the homepage</a>
+        <a class="btn btn-outline" href="https://wa.me/254182800321?text=Hi%20Gusii%20Digital%2C%20I%20followed%20a%20broken%20link%20on%20your%20site." target="_blank" rel="noopener">Ask on WhatsApp</a>
+      </div>
+    </div>
+  </main>
 
-    <footer class="footer">
-      <p>&copy; <span id="year">2026</span> Gusii Digital</p>
-      <p class="footer-note">Hosted on GitHub Pages</p>
-    </footer>
-  </div>
+  <footer class="site-footer">
+    <div class="shell footer-bottom">
+      <p>© <span id="year">2026</span> Gusii Digital · Made in Kisii</p>
+      <p>Digital growth for Gusii businesses.</p>
+    </div>
+  </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <a class="wa-fab" href="https://wa.me/254182800321?text=Hi%20Gusii%20Digital%2C%20I%27d%20like%20to%20talk%20about%20my%20business." target="_blank" rel="noopener" aria-label="Chat with Gusii Digital on WhatsApp" title="Chat on WhatsApp">
+    <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+    <span>WhatsApp us</span>
+  </a>
 </body>
 </html>

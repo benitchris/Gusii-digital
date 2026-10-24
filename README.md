@@ -1,52 +1,82 @@
 # Gusii Digital — website
 
-A single-page static site, deployed to GitHub Pages with GitHub Actions.
-No build step, no dependencies: what's in this folder is what gets served.
+A Kisii-rooted landing page for Gusii Digital. Static HTML, CSS and vanilla
+JavaScript — no build step and no dependencies. Everything in this folder is
+served as-is.
+
+Live site: **https://benitchris.github.io/Gusii-digital/**
+
+## What the page includes
+
+- Hero with a custom Gusii-highlands illustration and two quote CTAs
+- **Who we help**: 12 linked business cards (hotels, spas, salons, supermarkets,
+  restaurants, schools, farms, hardware, clinics, professional services, real
+  estate, transport) — each opens WhatsApp with a relevant message
+- **Services** in plain language: websites, Google Business Profile, social
+  media, campaigns and simple tools
+- **About** with the local story, areas served (Nyanchwa, Daraja Mbili, Ogembo,
+  Keroka, Suneka, Marani, Nyamira) and four practical advantages
+- **How it works**: Talk → Build → Grow
+- **Packages**: Presence, Growth and Partner with custom-quote CTAs (no invented
+  prices — every quote is scoped after a conversation)
+- **FAQ**, contact form, direct call/WhatsApp details and a Google Map of Kisii
+- Floating WhatsApp button on every page, mobile-first navigation, reveal
+  animations that respect `prefers-reduced-motion`
 
 ## Files
 
-- `index.html` — the landing page
-- `404.html` — not-found page
-- `assets/styles.css` — all styling
-- `.github/workflows/pages.yml` — the deploy pipeline
+```text
+index.html                 Homepage and all content
+404.html                   Branded not-found page
+assets/styles.css          Design system, layout and responsive rules
+assets/main.js             Nav, reveal animations and the form-to-WhatsApp flow
+assets/kisii-highlands.jpg Hero illustration (optimised)
+assets/favicon.svg         Hill-and-sun favicon
+robots.txt                 Crawler rules + sitemap reference
+sitemap.xml                Single-page sitemap
+.github/workflows/pages.yml GitHub Pages deploy workflow
+```
 
-## First deploy
+The original, full-resolution generated artwork lives in `vibe_images/` and is
+ignored by Git. Only the optimised hero file is deployed.
 
-1. Connect this folder to your GitHub repo and push:
+## Change the WhatsApp number or phone link
 
-   ```sh
-   git remote add origin https://github.com/benitchris/Gusii-digital.git
-   git add -A
-   git commit -m "Add site and GitHub Pages workflow"
-   git push -u origin main
-   ```
+The number is `+254 182 800321` and the WhatsApp deep link format is
+`https://wa.me/254182800321?text=...`. It appears in `index.html`, `404.html`
+and `assets/main.js` (the contact form). Search for `254182800321` and update
+all occurrences if the number changes.
 
-   If the repo already has commits, run `git pull --rebase origin main` before pushing.
+## Contact form
 
-2. On GitHub, open **Settings → Pages** and set **Build and deployment → Source**
-   to **GitHub Actions**. The workflow asks GitHub to do this automatically
-   (`enablement: true`), so this is usually already done; set it manually only
-   if the first run complains that Pages isn't enabled.
+The form has no backend. On submit it validates the fields, builds a prefilled
+message and opens WhatsApp in a new tab (`assets/main.js`). Nothing is sent until
+the visitor presses send inside WhatsApp.
 
-3. Open the **Actions** tab and watch the **Deploy to GitHub Pages** run. When it's
-   green, the site is live at:
+## Run locally
 
-   `https://benitchris.github.io/Gusii-digital/`
+```sh
+python3 -m http.server 8000
+```
 
-Every push to `main` after that redeploys automatically.
+Open <http://localhost:8000>. Opening `index.html` directly also works, but a
+local server matches GitHub Pages more closely.
 
-## Notes
+## Deploy
 
-- The workflow triggers on `main`. If your repo's default branch is `master`,
-  either rename it (`git branch -m master main`) or update the branch in
-  `pages.yml`.
-- All asset paths are relative, so the site works both at a project URL
-  (`/REPO/`) and at a user site root.
-- To preview locally: `python3 -m http.server 8000`, then open
-  <http://localhost:8000>.
-- Custom domain: **Settings → Pages → Custom domain**. GitHub adds a `CNAME`
-  file; keep it in the repo so deploys don't drop the domain.
-- The footer year updates itself via a small inline script.
-- Enquiries go to WhatsApp `+254 182 800 321` via the link in `index.html`
-  (`https://wa.me/254182800321`). Change the number in that one place if it
-  ever changes.
+Every push to `main` triggers the **Deploy to GitHub Pages** workflow. Check the
+**Actions** tab if a deploy fails. The workflow enables Pages automatically on
+the first run; the repository setting is **Settings → Pages → Source: GitHub
+Actions**.
+
+The homepage uses relative asset paths, so the site works at the project URL
+(`/Gusii-digital/`) and would also work at a user-site root. `404.html` uses
+project-root paths (`/Gusii-digital/...`) so its styles and links still load on
+deep broken URLs. If a custom domain is added, update those 404 paths plus the
+`canonical`/Open Graph URLs, `robots.txt` and `sitemap.xml`.
+
+## Content note
+
+The page deliberately avoids invented testimonials, client counts, results and
+prices. Once real client proof exists, add it (with permission) to the About
+section rather than inventing placeholder claims.

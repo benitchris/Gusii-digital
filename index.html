@@ -3,56 +3,670 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gusii Digital — Digital studio</title>
-  <meta name="description" content="Gusii Digital is a digital studio building websites and digital experiences with care.">
-  <meta name="theme-color" content="#f3efe6">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2314130f'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' font-style='italic' fill='%23f3efe6' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E">
+  <title>Gusii Digital — Websites &amp; Google profiles for Kisii businesses</title>
+  <meta name="description" content="A Kisii-born digital studio helping hotels, shops, salons, farms and services across the Gusii region get found online — fast websites, Google Business Profiles and WhatsApp-ready enquiries.">
+  <link rel="canonical" href="https://benitchris.github.io/Gusii-digital/">
+  <meta name="theme-color" content="#163b2c">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Gusii Digital">
+  <meta property="og:title" content="Gusii Digital — Digital growth for Gusii businesses">
+  <meta property="og:description" content="Websites, Google Business Profiles and practical digital marketing for businesses in Kisii, Nyamira and across the Gusii region.">
+  <meta property="og:url" content="https://benitchris.github.io/Gusii-digital/">
+  <meta property="og:image" content="https://benitchris.github.io/Gusii-digital/assets/kisii-highlands.jpg">
+  <meta property="og:image:alt" content="Illustration of the Gusii highlands with tea farms and market stalls">
+  <meta property="og:image:width" content="780">
+  <meta property="og:image:height" content="968">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gusii Digital — Digital growth for Gusii businesses">
+  <meta name="twitter:description" content="Websites, Google Business Profiles and practical digital marketing for businesses in Kisii, Nyamira and across the Gusii region.">
+  <meta name="twitter:image" content="https://benitchris.github.io/Gusii-digital/assets/kisii-highlands.jpg">
+  <meta name="twitter:image:alt" content="Illustration of the Gusii highlands with tea farms and market stalls">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="assets/kisii-highlands.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/main.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Gusii Digital",
+    "description": "Digital studio helping businesses in Kisii and the wider Gusii region get found online with websites, Google Business Profiles, social media and simple business tools.",
+    "url": "https://benitchris.github.io/Gusii-digital/",
+    "telephone": "+254182800321",
+    "image": "https://benitchris.github.io/Gusii-digital/assets/kisii-highlands.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kisii",
+      "addressCountry": "KE"
+    },
+    "areaServed": ["Kisii", "Nyamira", "Gusii region, Kenya"],
+    "knowsLanguage": ["English", "Swahili", "Ekegusii"]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <div class="page">
-    <header class="topbar">
-      <a class="wordmark" href="./" aria-label="Gusii Digital — home">Gusii <em>Digital</em></a>
-      <p class="status"><span class="dot" aria-hidden="true"></span>Launching soon</p>
-    </header>
+  <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-hotel" viewBox="0 0 24 24">
+      <path d="M3 19v-8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8"/>
+      <path d="M3 15h18M6 19v2M18 19v2M7 9V6h5v3M15 9V7h3v2"/>
+    </symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24">
+      <path d="M20 4C11.5 4 5 8 5 15.5A4.5 4.5 0 0 0 9.5 20C17 20 20 13.5 20 4Z"/>
+      <path d="M5 20c2-6 6-10 11-12"/>
+    </symbol>
+    <symbol id="i-scissors" viewBox="0 0 24 24">
+      <circle cx="6" cy="6" r="2.6"/>
+      <circle cx="6" cy="18" r="2.6"/>
+      <path d="M8.2 7.6 20 18M20 6 8.2 16.4"/>
+    </symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24">
+      <circle cx="9" cy="20" r="1.4"/>
+      <circle cx="18" cy="20" r="1.4"/>
+      <path d="M3 3h2l2.4 12.2a1.5 1.5 0 0 0 1.5 1.2h9.1a1.5 1.5 0 0 0 1.5-1.2L21 7H6"/>
+    </symbol>
+    <symbol id="i-cup" viewBox="0 0 24 24">
+      <path d="M4 9h12v5a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V9Z"/>
+      <path d="M16 10h2a2.5 2.5 0 0 1 0 5h-2M7 3v2M10 3v2M13 3v2"/>
+    </symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24">
+      <path d="m2 9 10-4 10 4-10 4L2 9Z"/>
+      <path d="M6 11v5.2c0 1.5 2.7 2.8 6 2.8s6-1.3 6-2.8V11M22 9v6"/>
+    </symbol>
+    <symbol id="i-sprout" viewBox="0 0 24 24">
+      <path d="M12 21v-8"/>
+      <path d="M12 13c0-4 3-7 8-7 0 4-3 7-8 7Z"/>
+      <path d="M12 17c0-3-2.5-6-7-6 0 3 2.5 6 7 6Z"/>
+    </symbol>
+    <symbol id="i-tool" viewBox="0 0 24 24">
+      <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+    </symbol>
+    <symbol id="i-health" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9"/>
+      <path d="M12 8v8M8 12h8"/>
+    </symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24">
+      <rect x="3" y="7" width="18" height="13" rx="2"/>
+      <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18M10 12v2h4v-2"/>
+    </symbol>
+    <symbol id="i-house" viewBox="0 0 24 24">
+      <path d="M3 11 12 3l9 8"/>
+      <path d="M5 10v10h14V10M10 20v-6h4v6"/>
+    </symbol>
+    <symbol id="i-bus" viewBox="0 0 24 24">
+      <rect x="4" y="4" width="16" height="13" rx="2"/>
+      <path d="M4 10h16M7 17v3M17 17v3M8 13.5h.01M16 13.5h.01"/>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24">
+      <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24">
+      <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 0 1 18 0Z"/>
+      <circle cx="12" cy="10" r="3"/>
+    </symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9"/>
+      <path d="M12 7v5l3 2"/>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 16 16">
+      <path d="M2.5 8h10M8.5 3.5 13 8l-4.5 4.5"/>
+    </symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+    </symbol>
+  </svg>
 
-    <main id="main" class="hero">
-      <p class="eyebrow">Websites &middot; Interfaces &middot; Digital products</p>
-
-      <h1>Digital work,<br><em>made with care.</em></h1>
-
-      <div class="intro">
-        <span class="hairline" aria-hidden="true"></span>
-        <div class="intro-copy">
-          <p class="lede">
-            Gusii Digital is a studio for thoughtful digital products.
-            The full site is on its way &mdash; this is the first page of it.
-          </p>
-          <a
-            class="cta"
-            href="https://wa.me/254182800321?text=Hi%20Gusii%20Digital%2C%20I%27d%20like%20to%20enquire%20about%20a%20project."
-            target="_blank"
-            rel="noopener"
-            aria-label="Enquire on WhatsApp at plus 254 182 800 321"
-          >
-            <span class="cta-dot" aria-hidden="true"></span>
-            Enquire on WhatsApp
-            <span class="cta-arrow" aria-hidden="true">&nearr;</span>
-          </a>
-        </div>
-      </div>
-    </main>
-
-    <footer class="footer">
-      <p>&copy; <span id="year">2026</span> Gusii Digital</p>
-      <p class="footer-note">Hosted on GitHub Pages</p>
-    </footer>
+  <div class="topbar">
+    <div class="shell topbar-inner">
+      <p>Proudly based in Kisii <span class="topbar-sep" aria-hidden="true">·</span> <span class="topbar-region">Serving the wider Gusii region</span></p>
+      <a class="topbar-phone" href="tel:+254182800321">+254 182 800321</a>
+    </div>
   </div>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <header class="site-header" id="top">
+    <div class="shell header-inner">
+      <a class="brand" href="./" aria-label="Gusii Digital — home">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <rect width="40" height="40" rx="9" fill="#163b2c"/>
+          <circle cx="27.5" cy="13" r="3.4" fill="#d3a24a"/>
+          <path d="M6 26c4-6 8.5-9 14-9s10 3 14 9" fill="none" stroke="#f7f2e7" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M10 32c3-3.5 6-5 10-5s7 1.5 10 5" fill="none" stroke="#f7f2e7" stroke-width="1.8" stroke-linecap="round" opacity=".55"/>
+        </svg>
+        <span class="brand-name">Gusii <em>Digital</em></span>
+      </a>
+
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <a href="#who">Who we help</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#process">How it works</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-solid btn-small header-cta" href="https://wa.me/254182800321?text=Hi%20Gusii%20Digital%2C%20I%27d%20like%20a%20free%20website%20quote." target="_blank" rel="noopener">Get a quote</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <span class="nav-toggle-bars" aria-hidden="true"><i></i><i></i></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span>Kisii · Nyamira · the wider Gusii region</p>
+          <h1>Digital growth for <em>Gusii businesses.</em></h1>
+          <p class="hero-lede">We’re a Kisii-born studio helping local shops, hotels, farms and services get found online — and turn that attention into real enquiries on WhatsApp.</p>
+          <div class="hero-actions">
+            <a class="btn btn-accent" href="https://wa.me/254182800321?text=Hi%20Gusii%20Digital%2C%20I%27d%20like%20a%20free%20website%20quote." target="_blank" rel="noopener">
+              Get a free website quote
+              <svg class="arrow-icon" aria-hidden="true"><use href="#i-arrow"></use></svg>
+            </a>
+            <a class="btn btn-ghost" href="#services">Explore our services</a>
+          </div>
+          <ul class="hero-trust">
+            <li>Face-to-face in Kisii</li>
+            <li>Mobile-first builds</li>
+            <li>English · Swahili · Ekegusii</li>
+          </ul>
+        </div>
+
+        <figure class="hero-visual">
+          <div class="hero-image-wrap">
+            <img src="assets/kisii-highlands.jpg" alt="Screen-print illustration of the Gusii highlands, with tea terraces, banana plants, red-earth paths and market stalls" width="780" height="968" fetchpriority="high">
+          </div>
+          <figcaption><span>Our home</span> The Gusii highlands</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section businesses" id="who">
+      <div class="shell">
+        <div class="section-head">
+          <div data-reveal>
+            <p class="eyebrow"><span class="eyebrow-line"></span>Who we help</p>
+            <h2>The businesses that keep <em>Gusii moving.</em></h2>
+          </div>
+          <p class="section-intro" data-reveal>From a hotel in town to a duka on the next street, we build the online presence that fits how your customers already search, compare and ask questions.</p>
+        </div>
+
+        <div class="biz-grid">
+          <a class="biz-card" href="https://wa.me/254182800321?text=Hi%20Gusii%20Digital%2C%20I%20run%20a%20hotel%20or%20lodge%20and%20I%27d%20like%20help%20getting%20found%20online." target="_blank" rel="noopener" data-reveal>
+            <span class="biz-icon"><svg aria-hidden="true"><use href="#i-hotel"></use></svg></span>
+            <h3>Hotels &amp; lodges</h3>
+            <p>Show up when travellers search, and take booking enquiries directly.</p>
+            <span class="card-cta">Let’s talk <svg class="arrow-icon" aria-hidden="true"><use href="#i-arrow"></use></svg></span>
+          </a>
+
+          <a class="biz-card" href="https://wa.me/254182800321?text=Hi%20Gusii%20Digital%2C%20I%20run%20a%20spa%20or%20wellness%20business%20and%20I%27d%20like%20help%20getting%20found%20online." target="_blank" rel="noopener" data-reveal>
+            <span class="biz-icon"><svg aria-hidden="true"><use href="#i-leaf"></use></svg></span>
+            <h3>Spas &amp; wellness</h3>
+            <p>A calm, premium presence with your services, photos and easy bookings.</p>
+            <span class="card-cta">Let’s talk <svg class="arrow-icon" aria-hidden="true"><use href="#i-arrow"></use></svg></span>
+          </a>
+
+          <a class="biz-card" href="https://wa.me/254182800321?text=Hi%20Gusii%20Digital%2C%20I%20run%20a%20salon%20or%20barbershop%20and%20I%27d%20like%20help%20getting%20found%20online." target="_blank" rel="noopener" data-reveal>
+            <span class="biz-icon"><svg aria-hidden="true"><use href="#i-scissors"></use></svg></span>
+            <h3>Salons &amp; barbershops</h3>
+            <p>A gallery of your work and appointments that come through WhatsApp.</p>
+            <span class="card-cta">Let’s talk <svg class="arrow-icon" aria-hidden="true"><use href="#i-arrow"></use></svg></span>
+          </a>
+
+          <a class="biz-card" href="https://wa.me/254182800321?text=Hi%20Gusii%20Digital%2C%20I%20run%20a%20supermarket%20or%20duka%20and%20I%27d%20like%20help%20getting%20found%20online." target="_blank" rel="noopener" data-reveal>
+            <span class="biz-icon"><svg aria-hidden="true"><use href="#i-cart"></use></svg></span>
+            <h3>Supermarkets &amp; dukas</h3>
+            <p>Let nearby customers find you, see your offers and order on WhatsApp.</p>
+            <span class="card-cta">Let’s talk <svg class="arrow-icon" aria-hidden="true"><use href="#i-arrow"></use></svg></span>
+          </a>
+
+          <a class="biz-card" href="https://wa.me/254182800321?text=Hi%20Gusii%20Digital%2C%20I%20run%20a%20restaurant%2C%20caf%C3%A9%20or%20bar%20and%20I%27d%20like%20help%20getting%20found%20online." target="_blank" rel="noopener" data-reveal>
+            <span class="biz-icon"><svg aria-hidden="true"><use href="#i-cup"></use></svg></span>
+            <h3>Restaurants, cafés &amp; bars</h3>
+            <p>Menus, directions and reviews that make people choose you.</p>
+            <span class="card-cta">Let’s talk <svg class="arrow-icon" aria-hidden="true"><use href="#i-arrow"></use></svg></span>
+          </a>
+
+          <a class="biz-card" href="https://wa.me/254182800321?text=Hi%20Gusii%20Digital%2C%20I%20run%20a%20school%20or%20college%20and%20I%27d%20like%20help%20getting%20found%20online." target="_blank" rel="noopener" data-reveal>
+            <span class="biz-icon"><svg aria-hidden="true"><use href="#i-cap"></use></svg></span>
+            <h3>Schools &amp; colleges</h3>
+            <p>Admissions, fees and term dates in one clear place for parents.</p>
+            <span class="card-cta">Let’s talk <svg class="arrow-icon" aria-hidden="true"><use href="#i-arrow"></use></svg></span>
+          </a>
+
+          <a class="biz-card" href="https://wa.me/254182800321?text=Hi%20Gusii%20Digital%2C%20I%20run%20a%20farm%20or%20agribusiness%20and%20I%27d%20like%20help%20getting%20found%20online." target="_blank" rel="noopener" data-reveal>
+            <span class="biz-icon"><svg aria-hidden="true"><use href="#i-sprout"></use></svg></span>
+            <h3>Farms &amp; agribusiness</h3>
+            <p>Tell buyers what you grow, and coordinate orders without phone tag.</p>
+            <span class="card-cta">Let’s talk <svg class="arrow-icon" aria-hidden="true"><use href="#i-arrow"></use></svg></span>
+          </a>
+
+          <a class="biz-card" href="https://wa.me/254182800321?text=Hi%20Gusii%20Digital%2C%20I%20run%20a%20hardware%20or%20construction%20business%20and%20I%27d%20like%20help%20getting%20found%20online." target="_blank" rel="noopener" data-reveal>
+            <span class="biz-icon"><svg aria-hidden="true"><use href="#i-tool"></use></svg></span>
+            <h3>Hardware &amp; construction</h3>
+            <p>A clear catalogue of supplies, delivery details and fast quote requests.</p>
+            <span class="card-cta">Let’s talk <svg class="arrow-icon" aria-hidden="true"><use href="#i-arrow"></use></svg></span>
+          </a>
+
+          <a class="biz-card" href="https://wa.me/254182800321?text=Hi%20Gusii%20Digital%2C%20I%20run%20a%20clinic%2C%20pharmacy%20or%20lab%20and%20I%27d%20like%20help%20getting%20found%20online." target="_blank" rel="noopener" data-reveal>
+            <span class="biz-icon"><svg aria-hidden="true"><use href="#i-health"></use></svg></span>
+            <h3>Clinics &amp; pharmacies</h3>
+            <p>Services, opening hours and directions people can trust at a glance.</p>
+            <span class="card-cta">Let’s talk <svg class="arrow-icon" aria-hidden="true"><use href="#i-arrow"></use></svg></span>
+          </a>
+
+          <a class="biz-card" href="https://wa.me/254182800321?text=Hi%20Gusii%20Digital%2C%20I%20run%20a%20professional%20service%20business%20and%20I%27d%20like%20help%20getting%20found%20online." target="_blank" rel="noopener" data-reveal>
+            <span class="biz-icon"><svg aria-hidden="true"><use href="#i-briefcase"></use></svg></span>
+            <h3>Professional services</h3>
+            <p>Look established online and turn searches into consultations.</p>
+            <span class="card-cta">Let’s talk <svg class="arrow-icon" aria-hidden="true"><use href="#i-arrow"></use></svg></span>
+          </a>
+
+          <a class="biz-card" href="https://wa.me/254182800321?text=Hi%20Gusii%20Digital%2C%20I%20run%20a%20real%20estate%20or%20rental%20business%20and%20I%27d%20like%20help%20getting%20found%20online." target="_blank" rel="noopener" data-reveal>
+            <span class="biz-icon"><svg aria-hidden="true"><use href="#i-house"></use></svg></span>
+            <h3>Real estate &amp; rentals</h3>
+            <p>List properties with photos, pricing and viewing enquiries in one link.</p>
+            <span class="card-cta">Let’s talk <svg class="arrow-icon" aria-hidden="true"><use href="#i-arrow"></use></svg></span>
+          </a>
+
+          <a class="biz-card" href="https://wa.me/254182800321?text=Hi%20Gusii%20Digital%2C%20I%20run%20a%20transport%2C%20tours%20or%20events%20business%20and%20I%27d%20like%20help%20getting%20found%20online." target="_blank" rel="noopener" data-reveal>
+            <span class="biz-icon"><svg aria-hidden="true"><use href="#i-bus"></use></svg></span>
+            <h3>Transport, tours &amp; events</h3>
+            <p>Packages, schedules and booking details that are easy to share.</p>
+            <span class="card-cta">Let’s talk <svg class="arrow-icon" aria-hidden="true"><use href="#i-arrow"></use></svg></span>
+          </a>
+        </div>
+
+        <p class="biz-note" data-reveal>Don’t see your business? <a href="https://wa.me/254182800321?text=Hi%20Gusii%20Digital%2C%20I%27d%20like%20to%20talk%20about%20my%20business." target="_blank" rel="noopener">Tell us what you do</a> — if it serves customers, we can help.</p>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="shell services-grid">
+        <div class="services-intro" data-reveal>
+          <p class="eyebrow"><span class="eyebrow-line"></span>Services</p>
+          <h2>Plain-language digital work, <em>built to bring enquiries.</em></h2>
+          <p class="section-intro">No complicated packages or tech talk. We do the practical things that help a local business look credible and get found.</p>
+          <a class="text-link" href="https://wa.me/254182800321?text=Hi%20Gusii%20Digital%2C%20I%27m%20not%20sure%20what%20I%20need%20yet.%20Can%20we%20talk%3F" target="_blank" rel="noopener">Not sure what you need? Let’s talk <svg class="arrow-icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+        </div>
+
+        <ol class="service-list">
+          <li data-reveal>
+            <span class="service-num">01</span>
+            <div>
+              <h3>Business websites</h3>
+              <p>Fast, mobile-first websites that make your business easy to find, easy to trust and easy to contact — built for real phones and real network conditions in Kisii.</p>
+              <ul class="tags"><li>One-page or multi-page</li><li>WhatsApp &amp; call buttons</li><li>Google Maps</li></ul>
+            </div>
+          </li>
+          <li data-reveal>
+            <span class="service-num">02</span>
+            <div>
+              <h3>Google Business Profile</h3>
+              <p>Get set up and verified on Google Maps with the right categories, photos and contact buttons, so nearby customers can find you and call or message.</p>
+              <ul class="tags"><li>Setup &amp; verification</li><li>Photos &amp; reviews</li><li>Directions &amp; hours</li></ul>
+            </div>
+          </li>
+          <li data-reveal>
+            <span class="service-num">03</span>
+            <div>
+              <h3>Social media that sells</h3>
+              <p>Consistent, on-brand content for Facebook, Instagram and TikTok — planned around your offers and enquiries, not random posting.</p>
+              <ul class="tags"><li>Content plan</li><li>Design &amp; captions</li><li>WhatsApp follow-up</li></ul>
+            </div>
+          </li>
+          <li data-reveal>
+            <span class="service-num">04</span>
+            <div>
+              <h3>Digital campaigns</h3>
+              <p>Focused promotions on Facebook, Instagram and Google, with a clear offer and a page built to turn clicks into real enquiries.</p>
+              <ul class="tags"><li>Meta &amp; Google ads</li><li>Landing pages</li><li>Simple reporting</li></ul>
+            </div>
+          </li>
+          <li data-reveal>
+            <span class="service-num">05</span>
+            <div>
+              <h3>Simple business tools</h3>
+              <p>Practical add-ons — digital menus, booking forms, WhatsApp catalogues and quote requests — chosen for how your business actually runs.</p>
+              <ul class="tags"><li>Bookings</li><li>Catalogues</li><li>Enquiry forms</li></ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="shell about-grid">
+        <div data-reveal>
+          <p class="eyebrow"><span class="eyebrow-line"></span>Our story</p>
+          <h2>Born in Kisii. <em>Built for the web.</em></h2>
+          <p>Gusii Digital was born in Kisii. We understand the unique challenges and opportunities of businesses here, in Nyamira and across the wider Gusii region. Whether you run a shop in town, a farm, a school, a hotel or a professional service, we help you build a strong online presence that brings real customers.</p>
+          <p>We don’t start with jargon or a template. We start with your business, your customers and how they find you — then build the simplest thing that works.</p>
+        </div>
+
+        <aside class="quote-card" data-reveal>
+          <span class="quote-mark" aria-hidden="true">“</span>
+          <blockquote>We are from here. We understand Kisii businesses. We help them grow online.</blockquote>
+          <p class="quote-note">Face-to-face in Kisii · remote across Kenya</p>
+          <ul class="area-tags" aria-label="Areas we serve">
+            <li>Kisii Town</li><li>Nyanchwa</li><li>Daraja Mbili</li><li>Ogembo</li><li>Keroka</li><li>Suneka</li><li>Marani</li><li>Nyamira</li>
+          </ul>
+        </aside>
+      </div>
+
+      <div class="shell">
+        <div class="advantage-grid">
+          <div class="advantage" data-reveal>
+            <h3>We meet you</h3>
+            <p>Prefer to talk in person? We meet face-to-face in Kisii and review your site on your phone, together.</p>
+          </div>
+          <div class="advantage" data-reveal>
+            <h3>Local behaviour</h3>
+            <p>Built around how customers here actually search, compare and message — usually from a phone, usually on WhatsApp.</p>
+          </div>
+          <div class="advantage" data-reveal>
+            <h3>Your language</h3>
+            <p>We work in English, Swahili and Ekegusii when that makes the conversation easier.</p>
+          </div>
+          <div class="advantage" data-reveal>
+            <h3>Practical, not complicated</h3>
+            <p>Clear quotes, plain explanations and tools you will actually use after the site goes live.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process" id="process">
+      <div class="shell">
+        <div class="section-head">
+          <div data-reveal>
+            <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span>How it works</p>
+            <h2>From first chat to <em>first enquiry.</em></h2>
+          </div>
+          <p class="section-intro intro-light" data-reveal>Simple, honest steps. You will know the plan, the timeline and the price before any work starts.</p>
+        </div>
+
+        <ol class="process-grid">
+          <li data-reveal>
+            <span class="process-num">01</span>
+            <h3>Talk</h3>
+            <p>Tell us about your business on WhatsApp or over a coffee in Kisii. We’ll ask what your customers usually ask you.</p>
+          </li>
+          <li data-reveal>
+            <span class="process-num">02</span>
+            <h3>Build</h3>
+            <p>We write, design and build on your phone first. You review everything before it goes live — no surprises.</p>
+          </li>
+          <li data-reveal>
+            <span class="process-num">03</span>
+            <h3>Grow</h3>
+            <p>Launch, sort out your Google profile and keep enquiries coming with simple follow-up and support.</p>
+          </li>
+        </ol>
+
+        <p class="process-note" data-reveal>Most conversations start with a free quote request — no obligation, no pressure.</p>
+      </div>
+    </section>
+
+    <section class="section packages" id="packages">
+      <div class="shell">
+        <div class="packages-head" data-reveal>
+          <p class="eyebrow"><span class="eyebrow-line"></span>Start here</p>
+          <h2>Start where it <em>makes sense.</em></h2>
+          <p class="section-intro">Every business is different, so every quote is too. These are the usual starting points — we’ll shape the details around you.</p>
+        </div>
+
+        <div class="package-grid">
+          <article class="package-card" data-reveal>
+            <p class="package-kicker">Presence</p>
+            <h3>Get found</h3>
+            <p class="package-for">For businesses that need a credible place online.</p>
+            <ul class="package-list">
+              <li>One-page website</li>
+              <li>WhatsApp &amp; call buttons</li>
+              <li>Google Maps directions</li>
+              <li>Mobile-first build</li>
+            </ul>
+            <a class="btn btn-outline package-cta" href="https://wa.me/254182800321?text=Hi%20Gusii%20Digital%2C%20I%27m%20interested%20in%20the%20Presence%20package.%20Please%20send%20me%20a%20quote." target="_blank" rel="noopener">Ask for a quote</a>
+          </article>
+
+          <article class="package-card package-featured" data-reveal>
+            <p class="package-badge">Recommended</p>
+            <p class="package-kicker">Growth</p>
+            <h3>Get enquiries</h3>
+            <p class="package-for">For businesses ready to turn searches into conversations.</p>
+            <ul class="package-list">
+              <li>Multi-page website</li>
+              <li>Google Business Profile setup</li>
+              <li>Photo &amp; content direction</li>
+              <li>Enquiry tracking</li>
+            </ul>
+            <a class="btn btn-accent package-cta" href="https://wa.me/254182800321?text=Hi%20Gusii%20Digital%2C%20I%27m%20interested%20in%20the%20Growth%20package.%20Please%20send%20me%20a%20quote." target="_blank" rel="noopener">Ask for a quote</a>
+          </article>
+
+          <article class="package-card" data-reveal>
+            <p class="package-kicker">Partner</p>
+            <h3>Keep growing</h3>
+            <p class="package-for">For brands that want ongoing help, not just a website.</p>
+            <ul class="package-list">
+              <li>Website &amp; profile care</li>
+              <li>Monthly social content</li>
+              <li>Campaign landing pages</li>
+              <li>Priority WhatsApp support</li>
+            </ul>
+            <a class="btn btn-outline package-cta" href="https://wa.me/254182800321?text=Hi%20Gusii%20Digital%2C%20I%27m%20interested%20in%20ongoing%20support.%20Please%20send%20me%20a%20quote." target="_blank" rel="noopener">Ask for a quote</a>
+          </article>
+        </div>
+
+        <p class="packages-note" data-reveal>No prices on the page because no two businesses are the same. After a short chat, you get a clear fixed quote before any work starts.</p>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="shell faq-grid">
+        <div data-reveal>
+          <p class="eyebrow"><span class="eyebrow-line"></span>Questions</p>
+          <h2>Good to <em>know.</em></h2>
+          <p class="section-intro">Still unsure? <a class="inline-link" href="https://wa.me/254182800321?text=Hi%20Gusii%20Digital%2C%20I%20have%20a%20question%20about%20getting%20my%20business%20online." target="_blank" rel="noopener">Ask us on WhatsApp</a> and we’ll give you a straight answer.</p>
+        </div>
+
+        <div class="faq-list">
+          <details>
+            <summary>How much does a website cost?</summary>
+            <p>It depends on what the site needs to do — the number of pages, photos, bookings and extras. After a short conversation we send a clear fixed quote, so you know the full cost before we start. No hidden extras.</p>
+          </details>
+          <details>
+            <summary>I already have a Facebook page. Do I still need a website?</summary>
+            <p>Facebook is great for conversation and updates. A website gives you one official link you control, with your services, location, photos and a clear way to enquire. We can connect the two so they work together.</p>
+          </details>
+          <details>
+            <summary>Do you only work with businesses in Kisii?</summary>
+            <p>We’re based in Kisii and love working face-to-face across the Gusii region. We also work remotely with clients elsewhere in Kenya — WhatsApp, calls and screen sharing make it straightforward.</p>
+          </details>
+          <details>
+            <summary>I’m not good with technology. Will I manage?</summary>
+            <p>That’s normal, and it’s our job to make it simple. We set things up, keep the tools practical, and show you how to check enquiries. You can always reach us on WhatsApp afterwards.</p>
+          </details>
+          <details>
+            <summary>Can you help a small duka or a new business?</summary>
+            <p>Yes. Some of the most useful work is getting a small business found on Google and reachable on WhatsApp. We’ll start with what makes sense for your stage and your budget.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="shell">
+        <div class="contact-head" data-reveal>
+          <p class="eyebrow"><span class="eyebrow-line"></span>Contact</p>
+          <h2>Let’s get your business <em>found.</em></h2>
+          <p class="section-intro">Tell us what you do and what you’d like to improve. A free, no-pressure chat — face-to-face in Kisii, or on WhatsApp.</p>
+        </div>
+
+        <div class="contact-grid">
+          <form class="contact-form" id="enquiry-form" data-reveal>
+            <div class="field-row">
+              <div class="field">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" autocomplete="name" placeholder="e.g. Ben Chris" required>
+              </div>
+              <div class="field">
+                <label for="business">Business name</label>
+                <input type="text" id="business" name="business" autocomplete="organization" placeholder="e.g. Nyamira Fresh Farm" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="business-type">What kind of business?</label>
+              <select id="business-type" name="business-type" required>
+                <option value="" selected disabled>Choose one</option>
+                <option>Hotel or lodge</option>
+                <option>Spa or wellness</option>
+                <option>Salon or barbershop</option>
+                <option>Supermarket or duka</option>
+                <option>Restaurant, café or bar</option>
+                <option>School or college</option>
+                <option>Farm or agribusiness</option>
+                <option>Hardware or construction</option>
+                <option>Clinic, pharmacy or lab</option>
+                <option>Professional service</option>
+                <option>Real estate or rentals</option>
+                <option>Transport, tours or events</option>
+                <option>Something else</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message">What do you need?</label>
+              <textarea id="message" name="message" rows="4" placeholder="A website, a Google profile, more enquiries — tell us in your own words." required></textarea>
+            </div>
+
+            <button class="btn btn-accent form-submit" type="submit">
+              Send on WhatsApp
+              <svg class="wa-icon" aria-hidden="true"><use href="#i-whatsapp"></use></svg>
+            </button>
+            <p class="form-note">This opens WhatsApp with your message ready to send — nothing is sent until you press send there. Prefer to talk? <a href="tel:+254182800321">Call +254 182 800321</a>.</p>
+          </form>
+
+          <aside class="contact-card" data-reveal>
+            <h3>Reach us directly</h3>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-icon"><svg class="wa-icon" aria-hidden="true"><use href="#i-whatsapp"></use></svg></span>
+                <div>
+                  <p class="contact-label">WhatsApp</p>
+                  <a href="https://wa.me/254182800321?text=Hi%20Gusii%20Digital%2C%20I%27d%20like%20to%20talk%20about%20my%20business." target="_blank" rel="noopener">+254 182 800321</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon"><svg aria-hidden="true"><use href="#i-phone"></use></svg></span>
+                <div>
+                  <p class="contact-label">Call</p>
+                  <a href="tel:+254182800321">+254 182 800321</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon"><svg aria-hidden="true"><use href="#i-pin"></use></svg></span>
+                <div>
+                  <p class="contact-label">Where we are</p>
+                  <p>Kisii, Kenya</p>
+                  <p class="contact-small">Face-to-face meetings by appointment.</p>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon"><svg aria-hidden="true"><use href="#i-clock"></use></svg></span>
+                <div>
+                  <p class="contact-label">Response</p>
+                  <p>We reply during working hours.</p>
+                  <p class="contact-small">Message anytime — we’ll get back to you.</p>
+                </div>
+              </li>
+            </ul>
+            <a class="btn btn-light" href="https://wa.me/254182800321?text=Hi%20Gusii%20Digital%2C%20I%27d%20like%20to%20talk%20about%20my%20business." target="_blank" rel="noopener">Chat on WhatsApp</a>
+            <p class="contact-note">No pressure — just a practical conversation about your business.</p>
+          </aside>
+        </div>
+
+        <div class="map-wrap" data-reveal>
+          <iframe
+            title="Map of Kisii, Kenya"
+            src="https://maps.google.com/maps?q=Kisii%2C%20Kenya&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="map-caption">
+            <p>Kisii town, Kenya</p>
+            <a href="https://maps.google.com/?q=Kisii,Kenya" target="_blank" rel="noopener">Open in Google Maps <svg class="arrow-icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-footer" href="./" aria-label="Gusii Digital — home">
+          <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+            <rect width="40" height="40" rx="9" fill="#163b2c"/>
+            <circle cx="27.5" cy="13" r="3.4" fill="#d3a24a"/>
+            <path d="M6 26c4-6 8.5-9 14-9s10 3 14 9" fill="none" stroke="#f7f2e7" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M10 32c3-3.5 6-5 10-5s7 1.5 10 5" fill="none" stroke="#f7f2e7" stroke-width="1.8" stroke-linecap="round" opacity=".55"/>
+          </svg>
+          <span class="brand-name">Gusii <em>Digital</em></span>
+        </a>
+        <p>Digital growth for Gusii businesses — websites, Google profiles and practical marketing, built from Kisii.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Explore">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#who">Who we help</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#process">How it works</a></li>
+          <li><a href="#faq">Questions</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="#services">Business websites</a></li>
+          <li><a href="#services">Google Business Profile</a></li>
+          <li><a href="#services">Social media</a></li>
+          <li><a href="#services">Digital campaigns</a></li>
+          <li><a href="#services">Simple tools</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="https://wa.me/254182800321?text=Hi%20Gusii%20Digital%2C%20I%27d%20like%20to%20talk%20about%20my%20business." target="_blank" rel="noopener">WhatsApp us</a></li>
+          <li><a href="tel:+254182800321">+254 182 800321</a></li>
+          <li>Kisii, Kenya</li>
+          <li><a href="#contact">Get a free quote</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="shell footer-bottom">
+      <p>© <span id="year">2026</span> Gusii Digital · Made in Kisii</p>
+      <p>Serving Kisii, Nyamira, Keroka, Ogembo, Suneka, Marani &amp; the wider Gusii region.</p>
+    </div>
+  </footer>
+
+  <a class="wa-fab" href="https://wa.me/254182800321?text=Hi%20Gusii%20Digital%2C%20I%27d%20like%20to%20talk%20about%20my%20business." target="_blank" rel="noopener" aria-label="Chat with Gusii Digital on WhatsApp" title="Chat on WhatsApp">
+    <svg class="wa-icon" aria-hidden="true"><use href="#i-whatsapp"></use></svg>
+    <span>WhatsApp us</span>
+  </a>
 </body>
 </html>
