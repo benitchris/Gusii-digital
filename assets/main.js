@@ -16,20 +16,54 @@
 
   const toggle = document.querySelector(".nav-toggle");
   if (header && toggle) {
-    const closeNav = () => {
+    const navLinks = header.querySelectorAll(".nav-list a");
+    const background = [
+      document.querySelector("main"),
+      document.querySelector(".site-footer"),
+      document.querySelector(".wa-fab"),
+    ].filter(Boolean);
+
+    const setBackgroundInert = (isInert) => {
+      background.forEach((el) => {
+        el.inert = isInert;
+      });
+    };
+
+    const closeNav = (returnFocus = false) => {
+      if (!header.classList.contains("nav-open")) {
+        return;
+      }
       header.classList.remove("nav-open");
       toggle.setAttribute("aria-expanded", "false");
       toggle.setAttribute("aria-label", "Open menu");
+      document.body.classList.remove("nav-locked");
+      setBackgroundInert(false);
+      if (returnFocus) {
+        toggle.focus();
+      }
+    };
+
+    const openNav = () => {
+      header.classList.add("nav-open");
+      toggle.setAttribute("aria-expanded", "true");
+      toggle.setAttribute("aria-label", "Close menu");
+      document.body.classList.add("nav-locked");
+      setBackgroundInert(true);
+      if (navLinks.length) {
+        window.setTimeout(() => navLinks[0].focus(), 120);
+      }
     };
 
     toggle.addEventListener("click", () => {
-      const isOpen = header.classList.toggle("nav-open");
-      toggle.setAttribute("aria-expanded", String(isOpen));
-      toggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+      if (header.classList.contains("nav-open")) {
+        closeNav(true);
+      } else {
+        openNav();
+      }
     });
 
     header.querySelectorAll(".nav a").forEach((link) => {
-      link.addEventListener("click", closeNav);
+      link.addEventListener("click", () => closeNav());
     });
 
     document.addEventListener("click", (event) => {
@@ -40,7 +74,7 @@
 
     document.addEventListener("keydown", (event) => {
       if (event.key === "Escape") {
-        closeNav();
+        closeNav(true);
       }
     });
 

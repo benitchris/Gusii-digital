@@ -1,51 +1,46 @@
 # Gusii Digital — website
 
-A Kisii-rooted landing page for Gusii Digital. Static HTML, CSS and vanilla
-JavaScript — no build step and no dependencies. Everything in this folder is
-served as-is.
+A Kisii-rooted, multi-page website for Gusii Digital. Static HTML, CSS and
+vanilla JavaScript — no build step and no dependencies. Everything in this
+folder is served as-is.
 
 Live site: **https://benitchris.github.io/Gusii-digital/**
 
-## What the page includes
+## Pages
 
-- Hero with a custom Gusii-highlands illustration and two quote CTAs
-- **Who we help**: 12 linked business cards (hotels, spas, salons, supermarkets,
-  restaurants, schools, farms, hardware, clinics, professional services, real
-  estate, transport) — each opens WhatsApp with a relevant message
-- **Services** in plain language: websites, Google Business Profile, social
-  media, campaigns and simple tools
-- **About** with the local story, areas served (Nyanchwa, Daraja Mbili, Ogembo,
-  Keroka, Suneka, Marani, Nyamira) and four practical advantages
-- **How it works**: Talk → Build → Grow
-- **Packages**: Presence, Growth and Partner with custom-quote CTAs (no invented
-  prices — every quote is scoped after a conversation)
-- **FAQ**, contact form, direct call/WhatsApp details and a Google Map of Kisii
-- Floating WhatsApp button on every page, mobile-first navigation, reveal
-  animations that respect `prefers-reduced-motion`
+- `index.html` — home: hero, six featured business types, services preview,
+  social-media monetisation, story, process, package preview and quote CTA
+- `who-we-help.html` — all 12 business types in three groups, plus a
+  creators/online-sellers route into monetisation
+- `services.html` — detailed services (websites, Google profile, social media &
+  monetisation, campaigns, tools), the full monetisation section, packages and
+  FAQ
+- `about.html` — the local story, areas served, practical advantages, the
+  meaning behind the logo and working principles
+- `contact.html` — enquiry form (opens prefilled WhatsApp), direct contact
+  details, Google Map of Kisii and “what happens next”
+- `404.html` — branded not-found page using project-root paths
 
-## Files
+Every page shares a responsive header, a full-screen mobile drawer, a footer
+with page and service links, and a floating WhatsApp button.
 
-```text
-index.html                 Homepage and all content
-404.html                   Branded not-found page
-assets/styles.css          Design system, layout and responsive rules
-assets/main.js             Nav, reveal animations and the form-to-WhatsApp flow
-assets/kisii-highlands.jpg Hero illustration (optimised)
-assets/favicon.svg         Hill-and-sun favicon
-robots.txt                 Crawler rules + sitemap reference
-sitemap.xml                Single-page sitemap
-.github/workflows/pages.yml GitHub Pages deploy workflow
-```
+## Brand assets
 
-The original, full-resolution generated artwork lives in `vibe_images/` and is
-ignored by Git. Only the optimised hero file is deployed.
+- `assets/logo.webp` — transparent full logo lockup (480×175), used in the
+  header and footer
+- `assets/favicon.png` — 64×64 emblem on cream
+- `assets/apple-touch-icon.png` — 180×180 touch icon
+- `assets/og-image.jpg` — 1200×630 social sharing card
+- `assets/kisii-highlands.jpg` — custom Kisii-highlands hero illustration
+- `assets/styles.css` — design system, layout, drawer and responsive rules
+- `assets/main.js` — drawer behaviour, reveal animations and form-to-WhatsApp
 
 ## Change the WhatsApp number or phone link
 
 The number is `+254 182 800321` and the WhatsApp deep link format is
-`https://wa.me/254182800321?text=...`. It appears in `index.html`, `404.html`
-and `assets/main.js` (the contact form). Search for `254182800321` and update
-all occurrences if the number changes.
+`https://wa.me/254182800321?text=...`. It appears throughout the HTML pages, in
+`404.html` and in `assets/main.js` (the contact form). Search for
+`254182800321` and update all occurrences if the number changes.
 
 ## Contact form
 
@@ -59,8 +54,8 @@ the visitor presses send inside WhatsApp.
 python3 -m http.server 8000
 ```
 
-Open <http://localhost:8000>. Opening `index.html` directly also works, but a
-local server matches GitHub Pages more closely.
+Open <http://localhost:8000>. Opening the HTML directly also works, but a local
+server matches GitHub Pages more closely.
 
 ## Deploy
 
@@ -69,14 +64,15 @@ Every push to `main` triggers the **Deploy to GitHub Pages** workflow. Check the
 the first run; the repository setting is **Settings → Pages → Source: GitHub
 Actions**.
 
-The homepage uses relative asset paths, so the site works at the project URL
-(`/Gusii-digital/`) and would also work at a user-site root. `404.html` uses
-project-root paths (`/Gusii-digital/...`) so its styles and links still load on
-deep broken URLs. If a custom domain is added, update those 404 paths plus the
+Pages use relative asset paths, so the site works at the project URL
+(`/Gusii-digital/`). `404.html` uses project-root paths
+(`/Gusii-digital/...`) so its styles and links still load on deep broken URLs.
+If a custom domain is added, update those 404 paths plus the per-page
 `canonical`/Open Graph URLs, `robots.txt` and `sitemap.xml`.
 
 ## Content note
 
-The page deliberately avoids invented testimonials, client counts, results and
-prices. Once real client proof exists, add it (with permission) to the About
-section rather than inventing placeholder claims.
+The site deliberately avoids invented testimonials, client counts, results and
+prices. Monetisation copy is explicit that income is not guaranteed. Once real
+client proof exists, add it (with permission) rather than inventing placeholder
+claims.
