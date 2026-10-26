@@ -31,7 +31,7 @@ with page and service links, and a floating WhatsApp button.
 - `assets/favicon.png` — 64×64 emblem on cream
 - `assets/apple-touch-icon.png` — 180×180 touch icon
 - `assets/og-image.jpg` — 1200×630 social sharing card
-- `assets/kisii-highlands.jpg` — custom Kisii-highlands hero illustration
+- `assets/kisii-town.jpg` — Kisii town night photo, graded to the brand green
 - `assets/styles.css` — design system, layout, drawer and responsive rules
 - `assets/main.js` — drawer behaviour, reveal animations and form-to-WhatsApp
 
